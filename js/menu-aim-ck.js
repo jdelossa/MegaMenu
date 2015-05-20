@@ -1,0 +1,1 @@
+function activatemenuactive(e){var t=$(e);t.find(".mega-menu-dropdown").addClass("menu-active")}function deactivatemenuactive(e){var t=$(e);t.find(".mega-menu-dropdown").removeClass("menu-active")}var $menu=$(".dropdown-menu");$menu.menuAim({activate:activatemenuactive,deactivate:deactivatemenuactive});$(".dropdown-menu li").click(function(e){e.stopPropagation()});

@@ -1,0 +1,201 @@
+/*
+Title: Mega Menu
+Version: 1.0
+Author: Winthrop University Hospital
+Author URI: http://www.winthrop.org
+*/
+.navbar-fixed-top {
+  background-color: #307ba0;
+  border-bottom: #1f6588 solid 5px;
+}
+.navbar-fixed-top .navbar-header .logo {
+  margin: 10px;
+  width: 150px;
+}
+.navbar-fixed-top .dropdown {
+  display: inline;
+  margin: 55px;
+  position: relative;
+  top: 8px;
+}
+.navbar-fixed-top .dropdown .btn-menu {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  border-bottom: transparent;
+  border-top: transparent;
+  color: #ffffff;
+  padding: 33px 20px;
+  position: relative;
+  bottom: 8px;
+}
+.navbar-fixed-top .dropdown .dropdown-menu li {
+  cursor: pointer;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #home {
+  border-left: solid 4px #cccccc;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #home:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #home:active,
+.navbar-fixed-top .dropdown .dropdown-menu #home:focus {
+  border-left: solid 4px #cccccc;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #e-i {
+  border-left: solid 4px #6e9948;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #e-i:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #e-i:active,
+.navbar-fixed-top .dropdown .dropdown-menu #e-i:focus {
+  border-left: solid 4px #6e9948;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #c-i {
+  border-left: solid 4px #994848;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #c-i:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #c-i:active,
+.navbar-fixed-top .dropdown .dropdown-menu #c-i:focus {
+  border-left: solid 4px #994848;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #depts {
+  border-left: solid 4px #2e663b;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #depts:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #depts:active,
+.navbar-fixed-top .dropdown .dropdown-menu #depts:focus {
+  border-left: solid 4px #2e663b;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #apps {
+  border-left: solid 4px #99984b;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #apps:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #apps:active,
+.navbar-fixed-top .dropdown .dropdown-menu #apps:focus {
+  border-left: solid 4px #99984b;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #dir {
+  border-left: solid 4px #4b9999;
+}
+.navbar-fixed-top .dropdown .dropdown-menu #dir:hover,
+.navbar-fixed-top .dropdown .dropdown-menu #dir:active,
+.navbar-fixed-top .dropdown .dropdown-menu #dir:focus {
+  border-left: solid 4px #4b9999;
+}
+.navbar-fixed-top .dropdown .dropdown-menu .active {
+  background-color: #f5f5f5;
+}
+.navbar-fixed-top .dropdown .dropdown-menu li > a {
+  margin: 8px 0;
+  padding: 10px 20px;
+}
+.navbar-fixed-top .dropdown .mega-menu {
+  padding: 30px;
+  position: absolute;
+  left: initial;
+  right: initial;
+  top: 46px;
+}
+.navbar-fixed-top .dropdown .mega-menu li {
+  width: 25%;
+}
+.navbar-fixed-top .dropdown .mega-menu li .glyphicon-chevron-right {
+  color: #bbbbbb;
+  float: right;
+  font-size: 10px;
+  position: relative;
+  top: 5px;
+}
+.navbar-fixed-top .dropdown .mega-menu .menu-active {
+  display: block !important;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: none;
+  list-style-type: none;
+  margin-left: 23%;
+  padding-bottom: 25px;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li {
+  display: block;
+  float: left;
+  width: 50%;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li a {
+  background-color: transparent;
+  border-left: none;
+  color: #ffffff;
+  line-height: 25px;
+  font-weight: 500;
+  padding: 8px 30px 8px 10px;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li a:hover,
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li a:active,
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .header {
+  color: #ffffff;
+  float: left;
+  font-size: 20px;
+  margin-top: 14px;
+  margin-bottom: -5px;
+}
+.navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .divider {
+  float: left;
+  width: 95%;
+}
+.navbar-fixed-top .dropdown .mega-menu #employee-information {
+  background-color: #6e9948;
+  display: block !important;
+}
+.navbar-fixed-top .dropdown .mega-menu #clinical-information {
+  background-color: #994848;
+  padding-bottom: 75px;
+}
+.navbar-fixed-top .dropdown .mega-menu #departments {
+  background-color: #2e663b;
+}
+.navbar-fixed-top .dropdown .mega-menu #applications {
+  background-color: #99984b;
+  padding-bottom: 200px;
+}
+.navbar-fixed-top .dropdown .mega-menu #directories {
+  background-color: #4b9999;
+  padding-bottom: 250px;
+}
+.navbar-fixed-top .navbar-search {
+  position: relative;
+  top: 18px;
+}
+.navbar-fixed-top .navbar-form .form-group .search-form {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  width: 500px;
+}
+.navbar-fixed-top .navbar-form .search-btn {
+  float: right;
+  height: 34px;
+  width: 38px;
+}
+@media (min-width: 1200px) {
+  .navbar-fixed-top .dropdown .mega-menu {
+    width: 1140px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
+    width: 846px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-fixed-top .dropdown .mega-menu {
+    width: 940px;
+  }
+}
+body {
+  padding-top: 100px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  -webkit-font-smoothing: antialiased;
+}
