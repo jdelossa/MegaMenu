@@ -113,7 +113,6 @@ Author URI: http://www.winthrop.org
   display: none;
   list-style-type: none;
   margin-left: 23%;
-  padding-bottom: 25px;
   position: absolute;
   overflow: hidden;
   top: 0px;
@@ -151,6 +150,7 @@ Author URI: http://www.winthrop.org
 .navbar-fixed-top .dropdown .mega-menu #employee-information {
   background-color: #6e9948;
   display: block !important;
+  padding-bottom: 25px;
 }
 .navbar-fixed-top .dropdown .mega-menu #clinical-information {
   background-color: #994848;
@@ -158,6 +158,7 @@ Author URI: http://www.winthrop.org
 }
 .navbar-fixed-top .dropdown .mega-menu #departments {
   background-color: #2e663b;
+  padding-bottom: 25px;
 }
 .navbar-fixed-top .dropdown .mega-menu #applications {
   background-color: #99984b;
@@ -165,6 +166,7 @@ Author URI: http://www.winthrop.org
 }
 .navbar-fixed-top .dropdown .mega-menu #directories {
   background-color: #4b9999;
+  padding-right: 1px;
   padding-bottom: 250px;
 }
 .navbar-fixed-top .navbar-search {
@@ -186,12 +188,48 @@ Author URI: http://www.winthrop.org
     width: 1140px;
   }
   .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
-    width: 846px;
+    width: 847px;
   }
 }
 @media (max-width: 1200px) {
   .navbar-fixed-top .dropdown .mega-menu {
     width: 940px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
+    width: 693px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown li > a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-fixed-top .navbar-form .form-group .search-form {
+    width: 275px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu {
+    padding: 51px 15px;
+    width: 720px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu li > a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
+    margin-left: 25%;
+    padding-bottom: 49px;
+    width: 524px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #employee-information {
+    padding-bottom: 49px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #clinical-information {
+    padding-bottom: 99px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #applications {
+    padding-bottom: 224px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #directories {
+    padding-bottom: 274px;
   }
 }
 body {
