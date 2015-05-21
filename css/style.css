@@ -4,6 +4,11 @@ Version: 1.0
 Author: Winthrop University Hospital
 Author URI: http://www.winthrop.org
 */
+body {
+  padding-top: 100px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  -webkit-font-smoothing: antialiased;
+}
 .navbar-fixed-top {
   background-color: #307ba0;
   border-bottom: #1f6588 solid 5px;
@@ -28,6 +33,9 @@ Author URI: http://www.winthrop.org
   padding: 33px 20px;
   position: relative;
   bottom: 8px;
+}
+.navbar-fixed-top .dropdown .btn-menu:after {
+  content: 'Menu';
 }
 .navbar-fixed-top .dropdown .dropdown-menu li {
   cursor: pointer;
@@ -142,14 +150,14 @@ Author URI: http://www.winthrop.org
   font-size: 20px;
   margin-top: 14px;
   margin-bottom: -5px;
+  width: 50% !important;
 }
 .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .divider {
   float: left;
-  width: 95%;
+  width: 95% !important;
 }
 .navbar-fixed-top .dropdown .mega-menu #employee-information {
   background-color: #6e9948;
-  display: block !important;
   padding-bottom: 25px;
 }
 .navbar-fixed-top .dropdown .mega-menu #clinical-information {
@@ -179,9 +187,14 @@ Author URI: http://www.winthrop.org
   width: 500px;
 }
 .navbar-fixed-top .navbar-form .search-btn {
-  float: right;
+  float: right !important;
   height: 34px;
+  position: relative;
+  bottom: 0;
   width: 38px;
+}
+.navbar-collapse.in {
+  overflow-y: visible;
 }
 @media (min-width: 1200px) {
   .navbar-fixed-top .dropdown .mega-menu {
@@ -215,15 +228,27 @@ Author URI: http://www.winthrop.org
     padding: 10px;
   }
   .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
-    margin-left: 25%;
+    margin-left: 24%;
     padding-bottom: 49px;
-    width: 524px;
+    width: 531px;
   }
   .navbar-fixed-top .dropdown .mega-menu #employee-information {
     padding-bottom: 49px;
   }
   .navbar-fixed-top .dropdown .mega-menu #clinical-information {
     padding-bottom: 99px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #departments {
+    padding-bottom: 50px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #departments li {
+    width: 36%;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #departments li a {
+    padding: 8px 7px 8px 5px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #departments .long {
+    width: 64%;
   }
   .navbar-fixed-top .dropdown .mega-menu #applications {
     padding-bottom: 224px;
@@ -232,8 +257,94 @@ Author URI: http://www.winthrop.org
     padding-bottom: 274px;
   }
 }
-body {
-  padding-top: 100px;
-  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-  -webkit-font-smoothing: antialiased;
+@media (max-width: 767px) {
+  body {
+    padding-top: 145px;
+  }
+  .navbar-fixed-top {
+    height: 145px;
+  }
+  .navbar-fixed-top .navbar-search {
+    top: 5px;
+  }
+  .navbar-fixed-top .navbar-form,
+  .navbar-fixed-top .navbar-collapse {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+  .navbar-fixed-top .navbar-form .form-group,
+  .navbar-fixed-top .navbar-collapse .form-group {
+    width: 100%;
+  }
+  .navbar-fixed-top .navbar-form .form-group .search-form,
+  .navbar-fixed-top .navbar-collapse .form-group .search-form {
+    width: 95%;
+  }
+  .navbar-fixed-top .navbar-form .search-btn,
+  .navbar-fixed-top .navbar-collapse .search-btn {
+    bottom: 39px;
+  }
+  .navbar-fixed-top .navbar-toggle {
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+  }
+  .navbar-fixed-top .navbar-toggle:hover,
+  .navbar-fixed-top .navbar-toggle:active,
+  .navbar-fixed-top .navbar-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .navbar-fixed-top .dropdown {
+    overflow-y: scroll;
+  }
+  .navbar-fixed-top .dropdown .btn-menu {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    float: right;
+    margin: 15px 16px 8px 12px;
+    padding: 6px 10px;
+    position: relative;
+    bottom: 122px;
+    left: 53px;
+  }
+  .navbar-fixed-top .dropdown .mega-menu {
+    padding: 5px;
+    position: relative;
+    top: -50px;
+    width: 100%;
+  }
+  .navbar-fixed-top .dropdown .mega-menu li {
+    width: 100%;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown {
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+  }
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .header,
+  .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .divider {
+    display: none;
+  }
+  .navbar-fixed-top .dropdown .mega-menu #employee-information,
+  .navbar-fixed-top .dropdown .mega-menu #clinical-information,
+  .navbar-fixed-top .dropdown .mega-menu #departments,
+  .navbar-fixed-top .dropdown .mega-menu #applications,
+  .navbar-fixed-top .dropdown .mega-menu #directories {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 570px) {
+  .navbar-fixed-top .dropdown .mega-menu li {
+    clear: both;
+    float: none !important;
+    width: 100% !important;
+  }
 }

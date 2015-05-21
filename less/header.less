@@ -22,6 +22,9 @@
       padding: 33px 20px;
       position: relative;
         bottom: 8px;
+      &:after {
+        content: 'Menu';
+      }
     }
     .dropdown-menu {
       li {
@@ -128,15 +131,15 @@
           font-size: 20px;
           margin-top: 14px;
           margin-bottom: -5px;
+          width: 50% !important;
         }
         .divider {
           float: left;
-          width: 95%;
+          width: 95% !important;
         }
       }
       #employee-information {
         background-color: @green;
-        display: block !important;
         padding-bottom: 25px;
       }
       #clinical-information {
@@ -171,9 +174,14 @@
       }
     }
     .search-btn {
-      float: right;
+      float: right !important;
       height: 34px;
+      position: relative;
+        bottom: 0;
       width: 38px;
     }
   }
+}
+.navbar-collapse.in {
+  overflow-y: visible;
 }

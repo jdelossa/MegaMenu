@@ -45,11 +45,10 @@
           font-size: 12px;
           padding: 10px;
         }
-
         .mega-menu-dropdown {
-          margin-left: 25%;
+          margin-left: 24%;
           padding-bottom: 49px;
-          width: 524px;
+          width: 531px;
         }
         #employee-information {
           padding-bottom: 49px;
@@ -57,11 +56,114 @@
         #clinical-information {
           padding-bottom: 99px;
         }
+        #departments {
+          padding-bottom: 50px;
+          li {
+            width: 36%;
+            a {
+              padding: 8px 7px 8px 5px;
+            }
+          }
+          .long {
+            width: 64%;
+          }
+        }
         #applications {
           padding-bottom: 224px;
         }
         #directories {
           padding-bottom: 274px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding-top: 145px;
+  }
+  .navbar-fixed-top {
+    height: 145px;
+    .navbar-search {
+      top: 5px;
+    }
+    .navbar-form, .navbar-collapse {
+      border: none;
+      box-shadow: none;
+        -webkit-box-shadow: none;
+      margin-top: 0;
+      padding: 0 15px;
+
+      .form-group {
+        width: 100%;
+          .search-form {
+            width: 95%;
+          }
+      }
+      .search-btn {
+          bottom: 39px;
+      }
+    }
+    .navbar-toggle {
+      border-color: rgba(0,0,0,0.2);
+      margin-top: 25px;
+
+      &:hover, &:active, &:focus {
+        background-color: rgba(0,0,0,0.2);
+      }
+
+        .icon-bar {
+          background-color: rgba(255,255,255,0.3);
+        }
+    }
+    .dropdown {
+      overflow-y: scroll;
+      .btn-menu {
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        float: right;
+        margin: 15px 16px 8px 12px;
+        padding: 6px 10px;
+        position: relative;
+          bottom: 122px;
+          left: 53px;
+      }
+      .mega-menu {
+        padding: 5px;
+        position: relative;
+          top: -50px;
+        width: 100%;
+
+        li {
+          width: 100%;
+        }
+
+        .mega-menu-dropdown {
+          .header, .divider {
+            display: none;
+          }
+          margin-left: 0;
+          position: relative;
+          width: 100%;
+        }
+        #employee-information, #clinical-information, #departments, #applications, #directories {
+          display: none;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 570px) {
+  .navbar-fixed-top {
+    .dropdown {
+      .mega-menu {
+        li {
+          clear: both;
+          float: none !important;
+          width: 100% !important;
         }
       }
     }
