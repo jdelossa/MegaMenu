@@ -1,26 +1,22 @@
 @media (min-width: 1200px){
-  .navbar-fixed-top {
-    .dropdown {
-      .mega-menu {
-        width: 1140px;
-        .mega-menu-dropdown {
-          width: 847px;
-        }
-      }
-    }
+  .dropdown {
+     .mega-menu {
+       width: 1140px;
+       .mega-menu-dropdown {
+         width: 847px;
+       }
+     }
   }
 }
 
 @media (max-width: 1200px){
-  .navbar-fixed-top {
-    .dropdown {
-      .mega-menu {
-        width: 940px;
-        .mega-menu-dropdown {
-          width: 693px;
-          li > a {
-            font-size: 12px;
-          }
+  .dropdown {
+    .mega-menu {
+      width: 940px;
+      .mega-menu-dropdown {
+        width: 693px;
+        li > a {
+          font-size: 12px;
         }
       }
     }
@@ -29,93 +25,64 @@
 
 @media (max-width: 991px){
   .navbar-fixed-top {
-      .navbar-form {
-        .form-group {
-          .search-form {
-            width: 275px;
+    height: 92px;
+  }
+  .navbar-form {
+    .form-group {
+      .search-form {
+        width: 275px;
+      }
+    }
+  }
+  .dropdown {
+    .mega-menu {
+      padding: 51px 15px;
+      top: 91px;
+      width: 720px;
+
+      li > a {
+        font-size: 12px;
+        padding: 10px;
+      }
+      .mega-menu-dropdown {
+        margin-left: 24%;
+        padding-bottom: 49px;
+        width: 531px;
+      }
+      #employee-information {
+        padding-bottom: 49px;
+      }
+      #clinical-information {
+        padding-bottom: 99px;
+      }
+      #departments {
+        padding-bottom: 50px;
+        li {
+          width: 36%;
+          a {
+            padding: 8px 7px 8px 5px;
           }
+        }
+        .long {
+          width: 64%;
         }
       }
-    .dropdown {
-      .mega-menu {
-        padding: 51px 15px;
-        width: 720px;
-
-        li > a {
-          font-size: 12px;
-          padding: 10px;
-        }
-        .mega-menu-dropdown {
-          margin-left: 24%;
-          padding-bottom: 49px;
-          width: 531px;
-        }
-        #employee-information {
-          padding-bottom: 49px;
-        }
-        #clinical-information {
-          padding-bottom: 99px;
-        }
-        #departments {
-          padding-bottom: 50px;
-          li {
-            width: 36%;
-            a {
-              padding: 8px 7px 8px 5px;
-            }
-          }
-          .long {
-            width: 64%;
-          }
-        }
-        #applications {
-          padding-bottom: 224px;
-        }
-        #directories {
-          padding-bottom: 274px;
-        }
+      #applications {
+        padding-bottom: 224px;
+      }
+      #directories {
+        padding-bottom: 274px;
       }
     }
   }
 }
+
 @media (max-width: 767px) {
   body {
     padding-top: 145px;
   }
   .navbar-fixed-top {
-    height: 145px;
-    .navbar-search {
-      top: 5px;
-    }
-    .navbar-form, .navbar-collapse {
-      border: none;
-      box-shadow: none;
-        -webkit-box-shadow: none;
-      margin-top: 0;
-      padding: 0 15px;
 
-      .form-group {
-        width: 100%;
-          .search-form {
-            width: 95%;
-          }
-      }
-      .search-btn {
-          bottom: 39px;
-      }
-    }
-    .navbar-toggle {
-      border-color: rgba(0,0,0,0.2);
-      margin-top: 25px;
-
-      &:hover, &:active, &:focus {
-        background-color: rgba(0,0,0,0.2);
-      }
-
-        .icon-bar {
-          background-color: rgba(255,255,255,0.3);
-        }
-    }
     .dropdown {
       overflow-y: scroll;
       .btn-menu {
@@ -126,19 +93,18 @@
         margin: 15px 16px 8px 12px;
         padding: 6px 10px;
         position: relative;
-          bottom: 122px;
-          left: 53px;
+          bottom: 100px;
+          left: 15px;
       }
       .mega-menu {
         padding: 5px;
         position: relative;
-          top: -50px;
+          top: -58px;
         width: 100%;
 
         li {
           width: 100%;
         }
-
         .mega-menu-dropdown {
           .header, .divider {
             display: none;
@@ -155,16 +121,30 @@
       }
     }
   }
+  .hidden-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 767px){
+  .dropdown {
+    #employee-information {
+      display: block !important;
+    }
+    .hidden-desktop {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }
 @media (max-width: 570px) {
-  .navbar-fixed-top {
-    .dropdown {
-      .mega-menu {
-        li {
-          clear: both;
-          float: none !important;
-          width: 100% !important;
-        }
+  .dropdown {
+    .mega-menu {
+      li {
+        clear: both;
+        float: none !important;
+        width: 100% !important;
       }
     }
   }
