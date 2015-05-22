@@ -5,20 +5,26 @@
       top: 8px;
 }
     .btn-menu {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: transparent;
       border-color: rgba(0, 0, 0, 0.2);
       border-radius: 0;
       border-bottom: transparent;
       border-top: transparent;
       color: #ffffff;
-      padding: 33px 20px;
+      padding: 20px;
       position: relative;
         bottom: 8px;
-      &:active, &:focus, &:hover {
-
+      .glyphicon {
+        font-size: 10px;
+        position: relative;
+          left: 3px;
       }
-      &:after {
-        content: 'Menu';
+      &:active, &:focus, &:hover {
+        background-color: rgba(0,0,0,0.1);
+        color: @white;
+      }
+      &:before {
+        content: "Menu";
       }
     }
     .dropdown-menu {
@@ -73,7 +79,7 @@
     .mega-menu {
       padding: 30px;
       position: fixed;
-        top: 90px;
+        top: 64px;
         left: 0;
         right: 0;
       margin: auto;

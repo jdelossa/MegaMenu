@@ -1,187 +1,187 @@
-.navbar-fixed-top {
-  background-color: @blue;
-  border-bottom: @dark-blue solid 5px;
-  .navbar-header {
-    .logo {
-      margin: 10px;
-      width: 150px;
-    }
-  }
-  .dropdown {
-    display: inline;
-    margin: 55px;
-    position: relative;
-      top: 8px;
-    .btn-menu {
-      background-color: rgba(0, 0, 0, 0.1);
-      border-color: rgba(0, 0, 0, 0.2);
-      border-radius: 0;
-      border-bottom: transparent;
-      border-top: transparent;
-      color: #ffffff;
-      padding: 33px 20px;
-      position: relative;
-        bottom: 8px;
-      &:after {
-        content: 'Menu';
-      }
-    }
-    .dropdown-menu {
-      li {
-        cursor: pointer;
-      }
-      #home {
-        border-left: solid 4px @gray;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @gray;
-        }
-      }
-      #e-i {
-        border-left: solid 4px @green;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @green;
-        }
-      }
-      #c-i {
-        border-left: solid 4px @red;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @red;
-        }
-      }
-      #depts {
-        border-left: solid 4px @dark-green;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @dark-green;
-        }
-      }
-      #apps {
-        border-left: solid 4px @yellow;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @yellow;
-        }
-      }
-      #dir {
-        border-left: solid 4px @light-blue;
-        &:hover, &:active, &:focus {
-          border-left: solid 4px @light-blue;
-        }
-      }
-      .active {
-        background-color: #f5f5f5;
-      }
-      li > a {
-        //border-left: solid 4px @dark-blue;
-        margin: 8px 0;
-        padding: 10px 20px;
-      }
-    }
-    .mega-menu {
-      padding: 30px;
-      position: absolute;
-        left: initial;
-        right: initial;
-        top: 46px;
-      // width in media query -> response.less
-      li {
-        width: 25%;
-        .glyphicon-chevron-right {
-          color: #bbbbbb;
-          float: right;
-          font-size: 10px;
-          position: relative;
-          top: 5px;
-        }
-      }
-      .menu-active {
-        display: block !important;
-      }
-      .mega-menu-dropdown {
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        display: none;
-        list-style-type: none;
-        margin-left: 23%;
-        position: absolute;
-        overflow: hidden;
-          top: 0px;
-        // width in media query -> response.less
-        li  {
-          display: block;
-          float: left;
-          width: 50%;
-
-          a {
-            background-color: transparent;
-            border-left: none;
-            color: @white;
-            line-height: 25px;
-            font-weight: 500;
-            padding: 8px 30px 8px 10px;
-
-            &:hover, &:active, &:focus {
-              background-color: rgba(0,0,0,0.3);
-              text-decoration: none;
-            }
-          }
-        }
-
-        .header {
-          color: @white;
-          float: left;
-          font-size: 20px;
-          margin-top: 14px;
-          margin-bottom: -5px;
-          width: 50% !important;
-        }
-        .divider {
-          float: left;
-          width: 95% !important;
-        }
-      }
-      #employee-information {
-        background-color: @green;
-        padding-bottom: 25px;
-      }
-      #clinical-information {
-        background-color: @red;
-        padding-bottom: 75px;
-      }
-      #departments {
-        background-color: @dark-green;
-        padding-bottom: 25px;
-      }
-      #applications {
-        background-color: @yellow;
-        padding-bottom: 200px;
-      }
-      #directories {
-        background-color: @light-blue;
-        padding-right: 1px;
-        padding-bottom: 250px;
-      }
-    }
-  }
-  .navbar-search {
-    position: relative;
-      top: 18px;
-  }
-  .navbar-form {
-    .form-group {
-      .search-form {
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
-        width: 500px;
-      }
-    }
-    .search-btn {
-      float: right !important;
-      height: 34px;
-      position: relative;
-        bottom: 0;
-      width: 38px;
-    }
-  }
-}
-.navbar-collapse.in {
-  overflow-y: visible;
-}
+//.navbar-fixed-top {
+//  background-color: @blue;
+//  border-bottom: @dark-blue solid 5px;
+//  .navbar-header {
+//    .logo {
+//      margin: 10px;
+//      width: 150px;
+//    }
+//  }
+//  .dropdown {
+//    display: inline;
+//    margin: 55px;
+//    position: relative;
+//      top: 8px;
+//    .btn-menu {
+//      background-color: rgba(0, 0, 0, 0.1);
+//      border-color: rgba(0, 0, 0, 0.2);
+//      border-radius: 0;
+//      border-bottom: transparent;
+//      border-top: transparent;
+//      color: #ffffff;
+//      padding: 33px 20px;
+//      position: relative;
+//        bottom: 8px;
+//      &:after {
+//        content: 'Menu';
+//      }
+//    }
+//    .dropdown-menu {
+//      li {
+//        cursor: pointer;
+//      }
+//      #home {
+//        border-left: solid 4px @gray;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @gray;
+//        }
+//      }
+//      #e-i {
+//        border-left: solid 4px @green;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @green;
+//        }
+//      }
+//      #c-i {
+//        border-left: solid 4px @red;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @red;
+//        }
+//      }
+//      #depts {
+//        border-left: solid 4px @dark-green;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @dark-green;
+//        }
+//      }
+//      #apps {
+//        border-left: solid 4px @yellow;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @yellow;
+//        }
+//      }
+//      #dir {
+//        border-left: solid 4px @light-blue;
+//        &:hover, &:active, &:focus {
+//          border-left: solid 4px @light-blue;
+//        }
+//      }
+//      .active {
+//        background-color: #f5f5f5;
+//      }
+//      li > a {
+//        //border-left: solid 4px @dark-blue;
+//        margin: 8px 0;
+//        padding: 10px 20px;
+//      }
+//    }
+//    .mega-menu {
+//      padding: 30px;
+//      position: absolute;
+//        left: initial;
+//        right: initial;
+//        top: 46px;
+//      // width in media query -> response.less
+//      li {
+//        width: 25%;
+//        .glyphicon-chevron-right {
+//          color: #bbbbbb;
+//          float: right;
+//          font-size: 10px;
+//          position: relative;
+//          top: 5px;
+//        }
+//      }
+//      .menu-active {
+//        display: block !important;
+//      }
+//      .mega-menu-dropdown {
+//        border-top-right-radius: 3px;
+//        border-bottom-right-radius: 3px;
+//        display: none;
+//        list-style-type: none;
+//        margin-left: 23%;
+//        position: absolute;
+//        overflow: hidden;
+//          top: 0px;
+//        // width in media query -> response.less
+//        li  {
+//          display: block;
+//          float: left;
+//          width: 50%;
+//
+//          a {
+//            background-color: transparent;
+//            border-left: none;
+//            color: @white;
+//            line-height: 25px;
+//            font-weight: 500;
+//            padding: 8px 30px 8px 10px;
+//
+//            &:hover, &:active, &:focus {
+//              background-color: rgba(0,0,0,0.3);
+//              text-decoration: none;
+//            }
+//          }
+//        }
+//
+//        .header {
+//          color: @white;
+//          float: left;
+//          font-size: 20px;
+//          margin-top: 14px;
+//          margin-bottom: -5px;
+//          width: 50% !important;
+//        }
+//        .divider {
+//          float: left;
+//          width: 95% !important;
+//        }
+//      }
+//      #employee-information {
+//        background-color: @green;
+//        padding-bottom: 25px;
+//      }
+//      #clinical-information {
+//        background-color: @red;
+//        padding-bottom: 75px;
+//      }
+//      #departments {
+//        background-color: @dark-green;
+//        padding-bottom: 25px;
+//      }
+//      #applications {
+//        background-color: @yellow;
+//        padding-bottom: 200px;
+//      }
+//      #directories {
+//        background-color: @light-blue;
+//        padding-right: 1px;
+//        padding-bottom: 250px;
+//      }
+//    }
+//  }
+//  .navbar-search {
+//    position: relative;
+//      top: 18px;
+//  }
+//  .navbar-form {
+//    .form-group {
+//      .search-form {
+//        border-bottom-right-radius: 0;
+//        border-top-right-radius: 0;
+//        width: 500px;
+//      }
+//    }
+//    .search-btn {
+//      float: right !important;
+//      height: 34px;
+//      position: relative;
+//        bottom: 0;
+//      width: 38px;
+//    }
+//  }
+//}
+//.navbar-collapse.in {
+//  overflow-y: visible;
+//}

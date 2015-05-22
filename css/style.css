@@ -16,18 +16,29 @@ body {
   top: 8px;
 }
 .btn-menu {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   border-color: rgba(0, 0, 0, 0.2);
   border-radius: 0;
   border-bottom: transparent;
   border-top: transparent;
   color: #ffffff;
-  padding: 33px 20px;
+  padding: 20px;
   position: relative;
   bottom: 8px;
 }
-.btn-menu:after {
-  content: 'Menu';
+.btn-menu .glyphicon {
+  font-size: 10px;
+  position: relative;
+  left: 3px;
+}
+.btn-menu:active,
+.btn-menu:focus,
+.btn-menu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+.btn-menu:before {
+  content: "Menu";
 }
 .dropdown-menu li {
   cursor: pointer;
@@ -90,7 +101,7 @@ body {
 .mega-menu {
   padding: 30px;
   position: fixed;
-  top: 90px;
+  top: 64px;
   left: 0;
   right: 0;
   margin: auto;
@@ -198,7 +209,6 @@ body {
   }
   .dropdown .mega-menu {
     padding: 51px 15px;
-    top: 91px;
     width: 720px;
   }
   .dropdown .mega-menu li > a {
@@ -250,13 +260,13 @@ body {
     margin: 15px 16px 8px 12px;
     padding: 6px 10px;
     position: relative;
-    bottom: 100px;
+    bottom: 73px;
     left: 15px;
   }
   .navbar-fixed-top .dropdown .mega-menu {
     padding: 5px;
     position: relative;
-    top: -58px;
+    top: -63px;
     width: 100%;
   }
   .navbar-fixed-top .dropdown .mega-menu li {
@@ -269,7 +279,7 @@ body {
   }
   .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .header,
   .navbar-fixed-top .dropdown .mega-menu .mega-menu-dropdown .divider {
-    display: none;
+    display: none !important;
   }
   .navbar-fixed-top .dropdown .mega-menu #employee-information,
   .navbar-fixed-top .dropdown .mega-menu #clinical-information,
@@ -302,7 +312,7 @@ body {
   }
 }
 .desktop-search {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media (max-width: 1200px) {
   .desktop-search {
@@ -314,16 +324,17 @@ body {
   .desktop-search {
     margin-top: 0;
     position: relative;
-    bottom: 60px;
+    bottom: 47px;
   }
 }
 .navbar-fixed-top {
   background-color: #307ba0;
   border-bottom: #1f6588 solid 5px;
+  height: 65px;
 }
 .navbar-fixed-top .navbar-header .logo {
   margin: 10px;
-  width: 150px;
+  width: 100px;
 }
 .navbar-collapse.in {
   overflow-y: visible;
